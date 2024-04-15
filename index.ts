@@ -120,7 +120,7 @@ function makeEmbed(info: any) {
 						lastUpdateDate
 							? lastUpdateDate.toLocaleString("EN-UK")
 							: "None"
-					} ${timeAgo(lastUpdateDate, currentUpdateDate)}`,
+					} (${timeAgo(lastUpdateDate, currentUpdateDate)})`,
 				},
 			},
 		],
