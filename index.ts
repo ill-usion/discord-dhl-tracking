@@ -6,9 +6,10 @@ async function getTrackingInfo() {
 	const API_KEY = process.env.DHL_API_KEY;
 
 	if (!TRACKING_URL || !TRACKING_NUMBER || !API_KEY) {
-		throw new Error(
+		console.error(
 			"`TRACKING_URL`, `TRACKING_NUMBER` and `DHL_API_KEY` are required."
 		);
+		return;
 	}
 
 	const reqUrl = new URL(TRACKING_URL);
@@ -48,9 +49,9 @@ async function runJob() {
 
 	const info = await getTrackingInfo();
 	var resp = await sendWebhook({
-		content: info !== null ? await info.text() : "Got no info",
+		content: info ? await info.text() : "Got no info",
 	});
-    
+
 	const status = resp.status;
 	console.log(status);
 
