@@ -1,2 +1,4 @@
 .env
 node_modules
+response.json
+tracking.json
