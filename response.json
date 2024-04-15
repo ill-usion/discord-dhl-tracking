@@ -1,0 +1,109 @@
+{
+    "shipments": [
+        {
+            "id": "RR009802110OM",
+            "service": "parcel-de",
+            "origin": {
+                "address": {
+                    "countryCode": "OM"
+                }
+            },
+            "destination": {
+                "address": {
+                    "countryCode": "DE"
+                }
+            },
+            "status": {
+                "timestamp": "2024-04-05T11:33:00",
+                "location": {
+                    "address": {
+                        "addressLocality": "Germany"
+                    }
+                },
+                "statusCode": "delivered",
+                "status": "Delivery successful.",
+                "description": "Delivery successful."
+            },
+            "serviceUrl": "https://www.dhl.de/de/privatkunden.html?piececode=RR009802110OM&cid=c_dhl_de_352_20205002_151_M040",
+            "details": {
+                "product": {
+                    "productName": "DHL PAKET (parcel)"
+                },
+                "proofOfDeliverySignedAvailable": false,
+                "totalNumberOfPieces": 1,
+                "pieceIds": [
+                    "RR009802110OM"
+                ]
+            },
+            "events": [
+                {
+                    "timestamp": "2024-04-05T11:33:00",
+                    "location": {
+                        "address": {
+                            "addressLocality": "Germany"
+                        }
+                    },
+                    "statusCode": "delivered",
+                    "status": "Delivery successful.",
+                    "description": "Delivery successful."
+                },
+                {
+                    "timestamp": "2024-04-05T08:03:00",
+                    "statusCode": "transit",
+                    "status": "Being delivered.",
+                    "description": "Being delivered."
+                },
+                {
+                    "timestamp": "2024-04-05T04:14:00",
+                    "location": {
+                        "address": {
+                            "addressLocality": "Germany"
+                        }
+                    },
+                    "statusCode": "transit",
+                    "status": "Preparation for onward transport",
+                    "description": "Preparation for onward transport"
+                },
+                {
+                    "timestamp": "2024-04-03T18:05:00",
+                    "statusCode": "transit",
+                    "status": "Arrival in the destination country/destination area.",
+                    "description": "Arrival in the destination country/destination area."
+                },
+                {
+                    "timestamp": "2024-04-01T11:34:00",
+                    "location": {
+                        "address": {
+                            "addressLocality": "Oman"
+                        }
+                    },
+                    "statusCode": "transit",
+                    "status": "Transportation to destination country/destination area.",
+                    "description": "Transportation to destination country/destination area."
+                },
+                {
+                    "timestamp": "2024-03-31T17:34:00",
+                    "location": {
+                        "address": {
+                            "addressLocality": "Oman"
+                        }
+                    },
+                    "statusCode": "transit",
+                    "status": "Export parcel center.",
+                    "description": "Export parcel center."
+                },
+                {
+                    "timestamp": "2024-03-31T13:29:00",
+                    "location": {
+                        "address": {
+                            "addressLocality": "Oman"
+                        }
+                    },
+                    "statusCode": "transit",
+                    "status": "Parcel center of origin.",
+                    "description": "Parcel center of origin."
+                }
+            ]
+        }
+    ]
+}
